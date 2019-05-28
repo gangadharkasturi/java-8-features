@@ -18,5 +18,6 @@ public class StreamApiUsage4 {
 		names.stream().map(x -> x+"_modified").forEach(a -> System.out.println(a));
 		names.stream().distinct().map(x ->  x+"_modified").forEach(a -> System.out.println(a));
 		names.stream().filter( x -> x.endsWith("h")).forEach(n -> System.out.println(n));
+		names.stream().filter(x -> x.startsWith("g")).forEach(System.out::println);
 	}
 }
